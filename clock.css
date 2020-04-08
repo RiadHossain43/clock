@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EDE7F6;
+}
+#a_clock{
+    position:absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    background-image:url('./clock.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px gray ;
+    
+}
+#d_clock{
+    position:absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 650px;
+    height: 450px;
+   
+}
+#mnt{
+    width: 48%;
+    height: 10px;
+    background-color: darkslateblue;
+    border-radius: 100%;
+    transform: rotate(90deg);
+}
+#sec{
+    width: 55%;
+    height: 2px;
+    background-color: black;
+}
+#hr{
+    width: 40%;
+    height: 20PX;
+    background-color: brown;
+    border-radius: 100%;
+}
+#dot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+#mnt,#sec,#hr{
+    transform-origin: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+#d_time,#time_zone,#area{
+    text-align: center;
+    text-shadow: 0px 6px 10px gray;
+}
+#d_time{
+    font-family: 'Fredoka One', cursive;
+    margin: 100px 30px 30px 30px;
+    font-size: 4em;
+}
+#time_zone{
+    margin: 30px;
+    font-size: 2em;
+    font-family: 'Alfa Slab One', cursive;
+}
+#area{
+    font-size: 2em;
+    font-family: 'Alfa Slab One', cursive;
+}
+@media only screen and (max-width: 600px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #a_clock{
+        position:absolute;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%,10%);
+        width: 250px;
+        height: 250px;
+        background-image:url('./clock.png');
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0px 10px 20px gray ;
+        
+    }
+    #d_clock{
+        position:absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,-10%);
+        width: 100%;
+        height: auto;
+    }
+
+}
