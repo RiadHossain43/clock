@@ -1,8 +1,12 @@
 
 window.addEventListener('load',()=>{
     let loader = document.getElementById('loader');
-    loader.style.display ='none';
-})
+    loader.style.animation = 'fadeaway 1s ease';
+    setTimeout(()=>{
+        loader.style.display ='none';
+    },1000);
+    
+});
 
 function eleID(name) {
     return document.getElementById(name);
