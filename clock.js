@@ -1,3 +1,4 @@
+
 setInterval(() => {
 
     // Getting time data from date object....

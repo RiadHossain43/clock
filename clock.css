@@ -84,16 +84,20 @@ body{
     font-family: 'Fredoka One', cursive;
     margin: 100px 30px 30px 30px;
     font-size: 4em;
+    opacity: 0;
 }
 #time_zone{
     margin: 30px;
     font-size: 2em;
     font-family: 'Alfa Slab One', cursive;
+    opacity: 0;
 }
 #area{
     font-size: 2em;
     font-family: 'Alfa Slab One', cursive;
+    opacity: 0;
 }
+
 @media only screen and (max-width: 768px) {
 
     body{

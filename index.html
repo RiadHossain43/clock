@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./clock.css" />
+    <link rel="stylesheet" href="./animation.css" />
     <title>Document</title>
 </head>
 
-<body>
+<body onload="animate()">
 
 
     <div id="a_clock">
@@ -25,10 +26,11 @@
 
     <div id="d_clock">
         <h1 id="d_time">22:34:59</h1>
-        <h1 id="time_zone">asdfasdf</h1>
+        <h1 id="time_zone" ></h1>
         <h1 id="area">Dhaka,Bangladesh</h1>
     </div>
 
+    <script src="./animation.js"></script>
     <script src="./clock.js"></script>
 
 </body>
