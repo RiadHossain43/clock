@@ -1,9 +1,14 @@
+@font-face {
+    src: url("./fonts/digital-7\ \(mono\ italic\).ttf");
+    font-family: 'digital-dismay';
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #EDE7F6;
+    background-color: #F5FFF7;
 }
 #loader{
     position: absolute;
@@ -38,10 +43,10 @@ body{
     height: 400px;  
     border-radius: 50%;
     box-shadow: 0px 5px 20px #3F3F3F,
-                0 5px 25px gray,
-                0 5px 34px gray,
-                0 5px 35px gray,
-                0 5px 35px gray;
+                0 5px 25px #BBDEFB,
+                0 5px 34px #BBDEFB,
+                0 5px 35px #BBDEFB,
+                0 5px 35px #F5FFF7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +59,7 @@ body{
     background-image:url('./clock2.png');
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0px 0px 10px black;
+    box-shadow: inset 0px 0px 15px #3F3F3F;
 }
 #d_clock{
     position:absolute;
@@ -64,6 +69,10 @@ body{
     width: 50%;
     height: 450px; 
     letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #mnt{
     width: 45%;
@@ -103,24 +112,28 @@ body{
 }
 #d_time,#time_zone,#area{
     text-align: center;
-    text-shadow: 0px 6px 10px gray;
-}
-#d_time{
-    font-family: 'Fredoka One', cursive;
-    margin: 100px 30px 30px 30px;
-    font-size: 4em;
-    opacity: 0;
+    text-shadow: 0px 6px 10px #B2EBF2;
 }
 #time_zone{
-    margin: 30px;
+    margin-top: 30px;
     font-size: 2em;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Poppins', sans-serif;
     opacity: 0;
+    color: #AEAEAE;
+}
+#d_time{
+    font-family: 'digital-dismay';
+    margin:40px;
+    font-size: 4em;
+    opacity: 0;
+    color:#86B8FF;
 }
 #area{
     font-size: 2em;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Poppins', sans-serif;
     opacity: 0;
+    color: #AEAEAE;
+    letter-spacing: 4px;
 }
 
 @media only screen and (max-width: 800px) {

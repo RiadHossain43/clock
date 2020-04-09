@@ -4,8 +4,11 @@ setInterval(() => {
     // Getting time data from date object....
     let date = new Date();
     let hour = date.getHours();
+    hour = (hour<10)? '0'+ hour : hour;
     let minute = date.getMinutes();
+    minute = (minute<10)? '0'+ minute : minute;
     let sec = date.getSeconds();
+    sec = (sec<10)? '0'+ sec : sec;
     let fulldate = date.toDateString();
 
     // Regular expressions for customising date string...
@@ -26,7 +29,7 @@ setInterval(() => {
         let datestr = date.toTimeString();
         let GMT = datestr.match(getGMT);
         let areaname = datestr.match(getArea);
-        d_time.innerHTML = hour + ' : ' + minute + ' : ' + sec;
+        d_time.innerHTML = hour + ':' + minute + ':' + sec;
         time_zone.innerHTML = fulldate + " " + GMT;
         area.innerHTML = areaname;
     }
