@@ -1,3 +1,9 @@
+
+window.addEventListener('load',()=>{
+    let loader = document.getElementById('loader');
+    loader.style.display ='none';
+})
+
 function eleID(name) {
     return document.getElementById(name);
 }
