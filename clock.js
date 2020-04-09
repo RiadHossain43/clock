@@ -31,9 +31,9 @@ setInterval(() => {
     }
     let updateAnalog = (minute, sec, hour) => {
         hour = (hour > 12) ? hour - 12 : hour;
-        secpin.style.transform = `rotate(${sec * 6 - 90}deg)`;
-        mntpin.style.transform = `rotate(${minute * 6 - 90 + (sec * 6 - 90) * 6 / 360}deg)`;
-        hrpin.style.transform = `rotate(${hour * 30 - 90 + (minute * 6 - 90) * 30 / 360}deg)`;
+        secpin.style.transform = `translateY(-50%) rotate(${sec * 6 -90}deg)`;
+        mntpin.style.transform = `translateY(-50%) rotate(${minute * 6 - 90 + (sec * 6 - 90) * 6 / 360}deg)`;
+        hrpin.style.transform = `translateY(-50%) rotate(${hour * 30 - 90 + (minute * 6 - 90) * 30 / 360}deg)`;
     }
     function eleID(name){
         return document.getElementById(name);
