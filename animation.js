@@ -1,10 +1,10 @@
 
 window.addEventListener('load',()=>{
     let loader = document.getElementById('loader');
-    loader.style.animation = 'fadeaway 1s ease';
+    loader.style.animation = 'fadeaway .8s ease';
     setTimeout(()=>{
         loader.style.display ='none';
-    },1000);
+    },800);
     
 });
 
