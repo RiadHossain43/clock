@@ -32,8 +32,8 @@ body{
 #a_clock{
     position:absolute;
     top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+    left: 12.5%;
+    transform: translate(-12.5%,-50%);
     width: 400px;
     height: 400px;  
     border-radius: 50%;
@@ -59,10 +59,11 @@ body{
 #d_clock{
     position:absolute;
     top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-    width: 650px;
+    left: 75%;
+    transform: translate(-55%,-50%);
+    width: 50%;
     height: 450px; 
+    letter-spacing: 2px;
 }
 #mnt{
     width: 45%;
@@ -122,7 +123,7 @@ body{
     opacity: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
     body{
         display: flex;
@@ -130,19 +131,30 @@ body{
     }
     #a_clock{
         position:absolute;
-        top: 2%;
+        top: 12.5%;
         left: 50%;
-        transform: translate(-50%,10%);
+        transform: translate(-50%,-12.5%);
         width: 250px;
         height: 250px;
     }
     #d_clock{
         position:absolute;
-        top: 100%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%,-110%);
+        transform: translate(-50%,0%);
         width: 100%;
-        height: auto;
+        height: 50%; 
     }
-
+    
+#d_time{
+    font-size: 8vh;
+    margin: 10% auto;
+}
+#time_zone{
+    font-size: 4vh;
+    margin: 15px;
+}
+#area{
+    font-size: 3vh;
+}
 }
